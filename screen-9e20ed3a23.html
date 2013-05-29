@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <title>
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body { padding-top: 60px; /* 60px to make the container go all the way
+      to the bottom of the topbar */ }
+      .thumbnail-300x200 {
+        width: 95%;
+        min-width: 95%;
+        height: 50%;
+        min-height: 150px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+
+      .caption .progress { margin-bottom: 0 }
+
+      .user-selection { opacity: 0.8 }
+
+      .nav .submenu {
+        border: 1px solid #ddd;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        padding: 10px;
+      }
+
+      
+      .navbar .brand { padding: 5px 20px 5px; } 
+
+      .thumbnails li:nth-child(5) {
+        margin-left: 0;
+      }
+
+      #dd1-sub li {
+        padding-bottom: 10px;
+      }
+    </style>
+
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+      </script>
+    <![endif]-->
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <style>
+    </style>
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+    	<div class="navbar-inner">
+    		<div class="container-fluid">
+    			<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+    				<span class="icon-bar"></span>
+    				<span class="icon-bar"></span>
+    				<span class="icon-bar"></span>
+    			</button>
+          <a class="brand" href="#"><img src="assets/img/logo_small.png"></img>&nbsp;Hometeam.io</a>
+    			<div class="nav-collapse collapse">
+    				<p class="navbar-text pull-right">
+    					Logged in as
+    					<a href="#" class="navbar-link">Jeffrey Chambers</a>
+    				</p>
+    				<ul class="nav">
+    					<li class="active">
+    						<a href="#">Fans</a>
+    					</li>
+    					<li>
+    						<a href="#about">Settings</a>
+    					</li>
+    					<li>
+    						<a href="#about">Help</a>
+    					</li>
+    					<li>
+    						<a href="#contact">Contact</a>
+    					</li>
+    				</ul>
+    			</div>
+    			<!--/.nav-collapse -->
+    		</div>
+    	</div>
+    </div>
+    <div class="container-fluid">
+    	<div class="row-fluid">
+        <div class="span3">
+          <ul class="nav nav-tabs affix-top nav-stacked" role="menu">
+             <li>
+               <a href="#">
+                 <i class="icon-chevron-right pull-right"></i>
+                 Manage Fans
+               </a>
+             </li>
+             <li class="menu" data-menu="dd1">
+               <a class="menu-toggle" role="button" data-toggle="dropdown" href="#">
+                 <i class="icon-chevron-right pull-right" class-toggle="icon-chevron-down"></i>
+                 Campaign Builder
+               </a>
+             </li>
+             <li id="dd1-sub" class="submenu hidden well" data-parent="dd1">
+               <ul class="inline">
+                 <li>
+                   <a href="#" class=""><img src="assets/img/social/Twitter_32x32.png"></img></a>
+                 </li>
+                 <li>
+                   <a href="#" class=""><img src="assets/img/social/Reddit_32x32.png"></img></a>
+                 </li>
+                 <li>
+                   <a href="#" class=""><img src="assets/img/social/hn.png" width="32" height="32"></img></a>
+                 </li>
+                 <li>
+                  <a href="#" class=""><img src="assets/img/social/Facebook_32x32.png"></img></a>
+                 </li>
+                 <li>
+                  <a href="#" class=""><img src="assets/img/social/angel.png" style="width:32px;height:32px" class="img-rounded"></img></a>
+                 </li>
+               </ul>
+             </li>
+             <li>
+              <a href="#">
+                <i class="icon-chevron-right pull-right"></i>
+                Email Blast
+              </a>
+             </li>
+             <li>
+              <a href="#">
+                <i class="icon-chevron-right pull-right"></i>
+                View Analytics
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="icon-chevron-right pull-right"></i>
+                Send Thank-Yous
+              </a>
+            </li>
+          </ul>
+          
+        </div>
+    		<!--/span-->
+    		<div class="span9">
+    			
+          <!--<div class="row-fluid">-->
+            <ul class="thumbnails">
+              <li class="span3">
+                <div class="thumbnail">
+                  <div style="background-image: url('https://s3.amazonaws.com/media.jetstrap.com/Ud9kGzwbQSqkKGrCaoAr_1363172_rural_self_portrait.jpg')" width="250" height="166" class="thumbnail-300x200 img-polaroid">
+                    <a class="user-selection btn btn-small pull-right" data-toggle="button" class-toggle="btn-primary" href="#"><i class="icon-ok"></i></a>
+                  </div>
+
+                  <div class="caption">
+                    <h4>Michael Girdley</h4>
+
+                    <small class="muted">
+                      Last update
+                    </small>
+                    <div class="progress progress-danger">
+                      <div class="bar" style="width: 20%"></div>
+                    </div>
+
+                    <small class="muted">
+                      Last heard
+                    </small>
+                    <div class="progress progress-warning">
+                      <div class="bar" style="width: 40%"></div>
+                    </div>
+
+                    <small class="muted">
+                      Last social
+                    </small>
+                    <div class="progress progress-success">
+                      <div class="bar" style="width: 80%"></div>
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+
+              <li class="span3">
+                <div class="thumbnail">
+                  <div style="background-image: url('https://s3.amazonaws.com/media.jetstrap.com/8BQVCmcJRIKW3VcByuKZ_1393948_young_man.jpg')" width="250" height="166" class="thumbnail-300x200 img-polaroid">
+                    <a class="user-selection btn btn-small pull-right" data-toggle="button" class-toggle="btn-primary" href="#"><i class="icon-ok"></i></a>
+                  </div>
+                  <div class="caption">
+                    <h4>Ryan Tanner</h4>
+                    <small class="muted">
+                      Last update
+                    </small>
+                    <div class="progress progress-success">
+                      <div class="bar" style="width: 85%"></div>
+                    </div>
+
+                    <small class="muted">
+                      Last heard
+                    </small>
+                    <div class="progress progress-warning">
+                      <div class="bar" style="width: 60%"></div>
+                    </div>
+
+                    <small class="muted">
+                      Last social
+                    </small>
+                    <div class="progress progress-success">
+                      <div class="bar" style="width: 80%"></div>
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+    				<!--/span-->
+              <li class="span3">
+                <div class="thumbnail">
+                  <div style="background-image: url('https://s3.amazonaws.com/media.jetstrap.com/hW8bMyWmQtydYvwLNlsD_1389566_it_is_here.jpg')" width="250" height="166" class="thumbnail-300x200 img-polaroid">
+                    <a class="user-selection btn btn-small pull-right" data-toggle="button" class-toggle="btn-primary" href="#"><i class="icon-ok"></i></a>
+                  </div>
+                  <div class="caption">
+                    <h4>Sarah Fischer</h4>
+                    <small class="muted">
+                      Last update
+                    </small>
+                    <div class="progress progress-success">
+                      <div class="bar" style="width: 90%"></div>
+                    </div>
+
+                    <small class="muted">
+                      Last heard
+                    </small>
+                    <div class="progress progress-success">
+                      <div class="bar" style="width: 100%"></div>
+                    </div>
+
+                    <small class="muted">
+                      Last social
+                    </small>
+                    <div class="progress progress-success">
+                      <div class="bar" style="width: 95%"></div>
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+
+    				<li class="span3">
+              <div class="thumbnail">
+                <div style="background-image: url('https://s3.amazonaws.com/media.jetstrap.com/lSFGRXjRGW7X0TBej9sR_1348198_self.jpg')" width="250" height="166" class="thumbnail-300x200 img-polaroid">
+                  <a class="user-selection btn btn-small pull-right" data-toggle="button" class-toggle="btn-primary" href="#"><i class="icon-ok"></i></a>
+                </div>
+                <div class="caption">
+                  <h4>Max Golding</h4>
+                    <small class="muted">
+                      Last update
+                    </small>
+                    <div class="progress progress-warning">
+                      <div class="bar" style="width: 60%"></div>
+                    </div>
+
+                    <small class="muted">
+                      Last heard
+                    </small>
+                    <div class="progress progress-warning">
+                      <div class="bar" style="width: 55%"></div>
+                    </div>
+
+                    <small class="muted">
+                      Last social
+                    </small>
+                    <div class="progress progress-success">
+                      <div class="bar" style="width: 80%"></div>
+                    </div>
+
+                  </div>
+              </div>
+    				</li>
+    				<!--/span-->
+    				<li class="span3">
+              <div class="thumbnail">
+                <div style="background-image: url('https://s3.amazonaws.com/media.jetstrap.com/ZYoyNiXdS0iUMNc2rgR8_1210354_sunbathing_2.jpg')" width="250" height="166" class="thumbnail-300x200 img-polaroid">
+                    <a class="user-selection btn btn-small pull-right" data-toggle="button" class-toggle="btn-primary" href="#"><i class="icon-ok"></i></a>
+                  </div>
+                <div class="caption">
+                  <h4>Kim Dickson</h4>
+                    <small class="muted">
+                      Last update
+                    </small>
+                    <div class="progress progress-success">
+                      <div class="bar" style="width: 85%"></div>
+                    </div>
+
+                    <small class="muted">
+                      Last heard
+                    </small>
+                    <div class="progress progress-success">
+                      <div class="bar" style="width: 80%"></div>
+                    </div>
+
+                    <small class="muted">
+                      Last social
+                    </small>
+                    <div class="progress progress-danger">
+                      <div class="bar" style="width: 10%"></div>
+                    </div>
+
+                  </div>
+              </div>
+            </li>
+    				<!--/span-->
+    				<li class="span3">
+              <div class="thumbnail">
+                <div style="background-image: url('https://s3.amazonaws.com/media.jetstrap.com/1w9UvAnvRkax1QcmiHbz_863795_student_with_computer_outdoors.jpg')" width="250" height="166" class="thumbnail-300x200 img-polaroid">
+                    <a class="user-selection btn btn-small pull-right" data-toggle="button" class-toggle="btn-primary" href="#"><i class="icon-ok"></i></a>
+                  </div>
+                <div class="caption">
+                  <h4>Angela Moore</h4>
+                    <small class="muted">
+                      Last update
+                    </small>
+                    <div class="progress progress-warning">
+                      <div class="bar" style="width: 55%"></div>
+                    </div>
+
+                    <small class="muted">
+                      Last heard
+                    </small>
+                    <div class="progress progress-success">
+                      <div class="bar" style="width: 80%"></div>
+                    </div>
+
+                    <small class="muted">
+                      Last social
+                    </small>
+                    <div class="progress progress-success">
+                      <div class="bar" style="width: 75%"></div>
+                    </div>
+
+                  </div>
+              </div>
+    				</li>
+
+    				<li class="span3">
+              <div class="thumbnail">
+                <div style="background-image: url('assets/img/woman.jpg')" width="250" height="166" class="thumbnail-300x200 img-polaroid">
+                    <a class="user-selection btn btn-small pull-right" data-toggle="button" class-toggle="btn-primary" href="#"><i class="icon-ok"></i></a>
+                  </div>
+                <div class="caption">
+                  <h4>Sharon Paulos</h4>
+                    <small class="muted">
+                      Last update
+                    </small>
+                    <div class="progress progress-warning">
+                      <div class="bar" style="width: 45%"></div>
+                    </div>
+
+                    <small class="muted">
+                      Last heard
+                    </small>
+                    <div class="progress progress-success">
+                      <div class="bar" style="width: 85%"></div>
+                    </div>
+
+                    <small class="muted">
+                      Last social
+                    </small>
+                    <div class="progress progress-warning">
+                      <div class="bar" style="width: 65%"></div>
+                    </div>
+
+                  </div>
+              </div>
+    				</li>
+
+    				<li class="span3">
+              <div class="thumbnail">
+                <div style="background-image: url('assets/img/male.jpg')" width="250" height="166" class="thumbnail-300x200 img-polaroid">
+                    <a class="user-selection btn btn-small pull-right" data-toggle="button" class-toggle="btn-primary" href="#"><i class="icon-ok"></i></a>
+                  </div>
+                <div class="caption">
+                  <h4>Jeffrey Pallan</h4>
+                    <small class="muted">
+                      Last update
+                    </small>
+                    <div class="progress progress-warning">
+                      <div class="bar" style="width: 45%"></div>
+                    </div>
+
+                    <small class="muted">
+                      Last heard
+                    </small>
+                    <div class="progress progress-danger">
+                      <div class="bar" style="width: 30%"></div>
+                    </div>
+
+                    <small class="muted">
+                      Last social
+                    </small>
+                    <div class="progress progress-success">
+                      <div class="bar" style="width: 65%"></div>
+                    </div>
+
+                  </div>
+              </div>
+    				</li>
+
+          </ul>
+    				<!--/span-->
+          <!--</div>-->
+    			<!--/row-->
+    		</div>
+    		<!--/span-->
+    	</div>
+    	<!--/row-->
+    	<hr>
+    	<footer>
+    		<p>
+    			© Hometeam.io 2013
+    		</p>
+    	</footer>
+    </div>
+    <!--/.fluid-container-->
+
+    <style>
+      
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      
+      @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+      
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+    </script>
+    <script src="assets/js/bootstrap.js">
+    </script>
+    <script>
+      $('.btn-group > .btn, .btn[data-toggle="button"]').click(function() {
+      var buttonClasses = ['btn-primary','btn-danger','btn-warning','btn-success','btn-info','btn-inverse'];
+      var $this = $(this);
+          
+          if ($(this).attr('class-toggle') != undefined && !$(this).hasClass('disabled')) {
+              
+              var btnGroup = $this.parent('.btn-group');
+              var btnToggleClass = $this.attr('class-toggle');
+              var btnCurrentClass = $this.hasAnyClass(buttonClasses);
+              
+              
+              if (btnGroup.attr('data-toggle') == 'buttons-radio') {
+                  var activeButton = btnGroup.find('.btn.active');
+                  var activeBtnClass = activeButton.hasAnyClass(buttonClasses);
+                  
+                  activeButton.removeClass(activeBtnClass).addClass(activeButton.attr('class-toggle')).attr('class-toggle',activeBtnClass);
+                  
+                
+              }
+              
+              $this.removeClass(btnCurrentClass).addClass(btnToggleClass).attr('class-toggle',btnCurrentClass);
+              
+              var $icon = $('[class^="icon"]', $this);
+
+              if($icon.hasClass('icon-white'))
+                $icon.removeClass('icon-white');
+              else
+                $icon.addClass('icon-white');
+
+              var $parent = $this.parents('div.thumbnail').toggleClass('alert-info');
+
+       
+          }
+
+       
+       
+       
+      });    
+       
+      $.fn.hasAnyClass = function(classesToCheck) {
+              for (var i = 0; i < classesToCheck.length; i++) {
+                  if (this.hasClass(classesToCheck[i])) {
+                      return classesToCheck[i];
+                  }
+              }
+              return false;
+          }
+    </script>
+
+    <script type="text/javascript">
+$('.nav .menu .menu-toggle').click(function () {
+  var $this = $(this);
+  var $menu = $this.parent();
+
+  // Switch chevron
+
+  var $toggleIcon = $('i', $this);
+  var navToggleClass = $toggleIcon.attr('class-toggle');
+  var navCurrentClass = $toggleIcon.hasAnyClass(['icon-chevron-right', 'icon-chevron-down']);
+
+  $toggleIcon.removeClass(navCurrentClass).addClass(navToggleClass).attr('class-toggle', navCurrentClass);
+
+  // Switch menu active
+
+  $menu.toggleClass('active');
+
+  $('.submenu[data-parent="' + $menu.data('menu') + '"]').toggleClass('hidden');
+
+});
+
+
+    </script>
+  </body>
+</html>
