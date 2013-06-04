@@ -45,6 +45,26 @@
       #dd1-sub li {
         padding-bottom: 10px;
       }
+
+      label {
+        margin-bottom: 0;
+      }
+
+      .gradient {
+        margin-bottom: 5px !important;
+        width: 193px;
+margin-left: -12px;
+padding-left: 10px;
+color: #ddd;
+        background: #3f4c6b; /* Old browsers */
+background: -moz-linear-gradient(top, #3f4c6b 0%, #3f4c6b 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f4c6b), color-stop(100%,#3f4c6b)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #3f4c6b 0%,#3f4c6b 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #3f4c6b 0%,#3f4c6b 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #3f4c6b 0%,#3f4c6b 100%); /* IE10+ */
+background: linear-gradient(to bottom, #3f4c6b 0%,#3f4c6b 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#3f4c6b',GradientType=0 ); /* IE6-9 */
+      }
     </style>
 
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
@@ -115,7 +135,7 @@
              <li id="dd1-sub" class="submenu hidden well" data-parent="dd1">
                <ul class="inline">
                  <li>
-                   <a href="#" class=""><img src="assets/img/social/Twitter_32x32.png"></img></a>
+                   <a href="#campaign-overlay" data-toggle="modal" class=""><img src="assets/img/social/Twitter_32x32.png"></img></a>
                  </li>
                  <li>
                    <a href="#" class=""><img src="assets/img/social/Reddit_32x32.png"></img></a>
@@ -357,7 +377,15 @@
                     <a class="user-selection btn btn-small pull-right" data-toggle="button" class-toggle="btn-primary" href="#"><i class="icon-ok"></i></a>
                   </div>
                 <div class="caption">
-                  <h4>Sharon Paulos</h4>
+                  <h4>Sharon Paulos <i style="margin-top: 4px" class="icon-chevron-down"></i></h4>
+                    <div class="gradient well well-small">
+                      <ul class="unlined unstyled">
+                        <li><label class="checkbox"><input type="checkbox"><small>Mentor</small></label></li>
+                        <li><label class="checkbox"><input type="checkbox"><small>Investor</small></label></li>
+                        <li><label class="checkbox"><input type="checkbox"><small>Beta Customer</small></label></li>
+                        <li><label class="checkbox"><input type="checkbox"><small>Friend</small></label></li>
+                      </ul>
+                    </div>
                     <small class="muted">
                       Last update
                     </small>
@@ -389,7 +417,15 @@
                     <a class="user-selection btn btn-small pull-right" data-toggle="button" class-toggle="btn-primary" href="#"><i class="icon-ok"></i></a>
                   </div>
                 <div class="caption">
-                  <h4>Jeffrey Pallan</h4>
+                  <h4>Jeffrey Pallan <i style="margin-top: 4px" class="icon-chevron-down"></i></h4>
+                    <div class="gradient well well-small">
+                      <ul class="unlined unstyled">
+                        <li><label class="checkbox"><input type="checkbox"><small>Mentor</small></label></li>
+                        <li><label class="checkbox"><input type="checkbox"><small>Investor</small></label></li>
+                        <li><label class="checkbox"><input type="checkbox"><small>Beta Customer</small></label></li>
+                        <li><label class="checkbox"><input type="checkbox"><small>Friend</small></label></li>
+                      </ul>
+                    </div>
                     <small class="muted">
                       Last update
                     </small>
@@ -431,6 +467,23 @@
     	</footer>
     </div>
     <!--/.fluid-container-->
+
+    <div class="modal fade hide" id="campaign-overlay" tab-index="-1" role="dialog">
+    
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Campaign Builder</h3>
+      </div>
+      <div class="modal-body">
+        <h1>1.</h1>
+        <p></p>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn">Close</a>
+        <a href="#" class="btn btn-primary">Save changes</a>
+      </div>
+
+    </div>
 
     <style>
       
